@@ -6,6 +6,8 @@ body {
 img {
     border-radius: 50%;
     box-shadow: 0 0 10px rgb(180, 169, 169);
+    margin: auto;
+
     grid-column: 1;
     grid-row: 2;
 }
@@ -13,9 +15,38 @@ img {
 section {
     grid-column: 2;
     grid-row: 2;
+    margin-left: 10px;
 }
 
 nav {
     grid-column: 2;
     grid-row: 3;
+    text-align: center;
+}
+
+h1 {
+    font-size: 60px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+.button {
+    padding: 15px 32px;
+    text-align: center;
+    margin: 2px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+    border-color: grey;
+    box-shadow: 0 0 10px rgb(180, 169, 169);
+}
+
+.button:hover {
+    background-color: rgba(128, 128, 128, 0.452);
 }
