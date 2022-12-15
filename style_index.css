@@ -1,0 +1,21 @@
+body {
+    display: grid;
+    grid-template: 1fr 2fr / 1fr 1fr 1fr;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgb(180, 169, 169);
+    grid-column: 1;
+    grid-row: 2;
+}
+
+section {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+nav {
+    grid-column: 2;
+    grid-row: 3;
+}
