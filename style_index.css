@@ -1,4 +1,5 @@
 body {
+    border: 5px black solid;
     display: grid;
     grid-template: 1fr 2fr / 1fr 1fr 1fr;
 }
@@ -6,20 +7,22 @@ body {
 img {
     border-radius: 50%;
     box-shadow: 0 0 10px rgb(180, 169, 169);
-    margin: auto;
-
+    justify-self: right;
     grid-column: 1;
     grid-row: 2;
 }
 
 section {
-    grid-column: 2;
+    border: 5px black solid;
+    grid-column-start: 2;
+    grid-column-end: span 2;
     grid-row: 2;
-    margin-left: 10px;
 }
 
 nav {
-    grid-column: 2;
+    border: 5px black solid;
+    grid-column-start: 2;
+    grid-column-end: span 2;
     grid-row: 3;
     text-align: center;
 }
@@ -35,7 +38,7 @@ h3 {
 }
 
 .button {
-    padding: 15px 32px;
+    padding: 0px;
     text-align: center;
     margin: 2px;
     text-decoration: none;
@@ -57,9 +60,10 @@ h3 {
 @media screen and (max-width: 600px) {
     body {
         display: grid;
-        grid-template: 1fr/1fr 1fr 1fr;
+        grid-template: 1fr 1fr 1fr/1fr;
     }
     img {
+        justify-self: center;
         grid-column: 1;
         grid-row: 1;
     }
@@ -70,5 +74,10 @@ h3 {
     nav {
         grid-column: 1;
         grid-row:3;
+    }
+    .button {
+        padding: 0;
+        width: 150px;
+        height: 100px;
     }
 }
