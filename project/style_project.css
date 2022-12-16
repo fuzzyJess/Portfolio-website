@@ -1,27 +1,85 @@
 body {
-    border: 5px black solid;
-    display: grid;
-    grid-template: 20px 1fr 1fr 1fr 1fr 20px /  20px 1fr 1fr 1fr 1fr 20px;
+   display: grid;
+    grid-template: 1fr 1fr 1fr 50px /  1fr 1fr 1fr ;
+    gap: 10px;
+    margin: 20px;
 }
 
 img {
-    border: 5px black solid;
-    width: 400px;
-    margin: 10px;
+    max-width: 90%;
     border-radius: 20px;
     box-shadow: 0 0 10px rgb(180, 169, 169);
     justify-self: center;
 }
 
 .one {
-    grid-row: 2;
-    grid-column: 2;
+    grid-row: 1;
+    grid-column: 1;
 }
 .two {
-    grid-row: 2;
+    grid-row: 1;
+    grid-column: 2;
+}
+.three {
+    grid-row: 1;
     grid-column: 3;
 }
-.one {
+.four {
     grid-row: 2;
-    grid-column: 4;
+    grid-column: 1;
+}
+
+nav {
+    grid-row: 4;
+    grid-column-start: 1;
+    grid-column: span 3;
+}
+
+.button {
+    padding: 15px 32px;
+    text-align: center;
+    margin: 2px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 20px;
+    font-size: 20px;
+    color: black;
+    border-color: grey;
+    transition-duration: 0.6s;
+    box-shadow: 0 0 10px rgb(180, 169, 169);
+}
+
+.button:hover {
+    background-color: rgba(128, 128, 128, 0.452);
+}
+
+/* Display on a smaller screen */
+
+@media screen and (max-width: 600px) {
+    body {
+        display: grid;
+        grid-template: 1fr 1fr 1fr 50px /1fr 1fr;
+        gap: 10px;
+        margin: 20px;
+    }
+    img {
+        max-width: 90%;
+    }
+
+    .one {
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .two {
+        grid-row: 1;
+        grid-column: 2;
+    }
+    .three {
+        grid-row: 2;
+        grid-column: 1;
+    }
+    .four {
+        grid-row: 2;
+        grid-column: 2;
+    }
 }
