@@ -28,6 +28,10 @@ img {
     grid-row: 2;
     grid-column: 1;
 }
+.five {
+    grid-row: 2;
+    grid-column: 2;
+}
 
 nav {
     grid-row: 4;
@@ -81,5 +85,9 @@ nav {
     .four {
         grid-row: 2;
         grid-column: 2;
+    }
+    .five {
+        grid-row: 3;
+        grid-column: 1;
     }
 }
